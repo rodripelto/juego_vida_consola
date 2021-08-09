@@ -1,18 +1,11 @@
 import time as t
 import os as o
+from metodos_entrada_datos import borrar
 
 """
 El texto ha sido convertido en la página
 http://www.patorjk.com/software/taag/#p=display&f=condenar&t=BIENVENIDOS%0A
 """
-def borrar():
-    """
-    Método para borrar la consola según sistema operativo
-    """
-    if o.name == "posix":
-        o.system ("clear")
-    elif o.name == "ce" or o.name == "nt" or o.name == "dos":
-        o.system ("cls")
 
 def pantalla_inicio():
     borrar()

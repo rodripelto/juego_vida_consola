@@ -2,7 +2,7 @@ import msvcrt as key
 import os
 def borrar():
     """
-    Método para borrar la consola segun sistema operativo
+    Método para borrar la consola según sistema operativo
     """
     if os.name == "posix":
         os.system ("clear")
@@ -113,7 +113,7 @@ def input_doble(mensaje_in, mensaje_fin):
         else:  # Para la tecla borrar
             entrada = entrada[:-1]  # Borro lo último
         entrada = entrada.rstrip()  # Elimino espacios y retornos de carro
-        # Le sumo 2 ya que tenemos un espacio y longitud de entrada vale uno menos que cuando se escribio
+        # Le sumo 2 ya que tenemos un espacio y longitud de entrada vale uno menos que cuando se escribió
         mensaje(len(mensaje_in)+len(entrada)+len(mensaje_fin)+2)
     print("\n")  # Para que ponga un salto de linea
     return entrada  # Elimino espacios y retornos de carro
@@ -172,3 +172,6 @@ def lista_string():
         else:
             seguir=False # Cambio la bandera para que salga del bucle, también podría haber usado break
     return palabras
+
+def pulsa():
+    return chr(ord(key.getch()))
