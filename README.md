@@ -8,6 +8,11 @@ El juego termina en tres supuestos casos, que el contador llegue al máximo de c
 Que el ecosistema se quede sin vida.
 Que el ecosistema se estanque y no tenga cambios.
 
+1ª Revisión
+Se añade la posibilidad de guardar y cargar ecosistemas.
+Se añaden ecosistemas por defecto
+Se añade menú de opciones
+
 Posibles revisiones a futuro.
 
 Ejecutar el juego en un hilo y poder pausar, reanudar y terminar el juego con pulsaciones de tecla.
